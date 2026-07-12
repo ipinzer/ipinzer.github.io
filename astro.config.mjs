@@ -7,6 +7,6 @@ export default defineConfig({
   // For a GitHub *project* page (…github.io/<repo>), also set `base: "/<repo>"`.
   site: "https://izzypinzer.example.com",
   build: {
-    inlineStylesheets: "auto",
+    inlineStylesheets: "always",
   },
 });
