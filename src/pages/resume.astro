@@ -1,0 +1,170 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import resume from "../data/resume.json";
+---
+
+<BaseLayout title="Resume">
+  <section class="section--tight container resume">
+    <div class="resume__head">
+      <div>
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h1>{resume.name}</h1>
+        <p class="resume__role">{resume.title}</p>
+      </div>
+      <a class="btn btn--accent" href="/resume.pdf" download>Download PDF</a>
+    </div>
+
+    <p class="lead resume__summary">{resume.summary}</p>
+
+    <div class="resume__grid">
+      <section class="resume__block">
+        <h2>Education</h2>
+        {
+          resume.education.map((e) => (
+            <div class="entry">
+              <div class="entry__top">
+                <h3>{e.school}</h3>
+                <span class="entry__when">{e.when}</span>
+              </div>
+              <p>{e.detail}</p>
+            </div>
+          ))
+        }
+      </section>
+
+      <section class="resume__block">
+        <h2>Experience</h2>
+        {
+          resume.experience.map((x) => (
+            <div class="entry">
+              <div class="entry__top">
+                <h3>{x.role}</h3>
+                <span class="entry__when">{x.when}</span>
+              </div>
+              <p class="entry__place">{x.place}</p>
+              <ul>
+                {x.points.map((pt) => (
+                  <li>{pt}</li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </section>
+    </div>
+
+    <div class="resume__grid resume__grid--lower">
+      <section class="resume__block">
+        <h2>Skills</h2>
+        <ul class="tags">
+          {resume.skills.map((s) => <li>{s}</li>)}
+        </ul>
+      </section>
+      <section class="resume__block">
+        <h2>Awards & Activities</h2>
+        <ul class="bullets">
+          {resume.other.map((o) => <li>{o}</li>)}
+        </ul>
+      </section>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .resume__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  .resume__role {
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    margin: 0.4rem 0 0;
+  }
+  .resume__summary {
+    max-width: 70ch;
+    padding-bottom: clamp(1.5rem, 4vw, 2.5rem);
+    border-bottom: 1px solid var(--line);
+  }
+  .resume__grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: clamp(2rem, 6vw, 5rem);
+    padding-block: clamp(2rem, 5vw, 3rem);
+  }
+  .resume__grid--lower {
+    border-top: 1px solid var(--line);
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 800px) {
+    .resume__grid,
+    .resume__grid--lower {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+  .resume__block h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+  .entry {
+    margin-bottom: 1.8rem;
+  }
+  .entry__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  .entry__top h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+  }
+  .entry__when {
+    font-size: 0.8rem;
+    color: var(--accent-deep);
+    white-space: nowrap;
+  }
+  .entry__place {
+    font-style: italic;
+    margin: 0.2rem 0 0.6rem;
+  }
+  .entry ul {
+    margin: 0.4rem 0 0;
+    padding-left: 1.1rem;
+  }
+  .entry li {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    margin-bottom: 0.35rem;
+  }
+  .tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  .tags li {
+    font-size: 0.82rem;
+    padding: 0.4rem 0.85rem;
+    background: var(--bg-alt);
+    border: 1px solid var(--line);
+    color: var(--ink);
+  }
+  .bullets {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+  .bullets li {
+    color: var(--ink-soft);
+    margin-bottom: 0.5rem;
+  }
+</style>

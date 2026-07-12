@@ -1,0 +1,170 @@
+---
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { homeHero, projectCover } from "../lib/images.ts";
+import site from "../data/site.json";
+
+const projects = await getCollection("projects");
+const featured = projects
+  .filter((p) => p.data.category === "featured")
+  .sort((a, b) => a.data.order - b.data.order);
+
+const hero = homeHero();
+---
+
+<BaseLayout>
+  <section class="hero">
+    <div class="hero__media">
+      <Image
+        src={hero}
+        alt="Interior render by Izzy Pinzer"
+        widths={[800, 1400, 2000]}
+        sizes="100vw"
+        quality={82}
+        loading="eager"
+      />
+      <div class="hero__scrim"></div>
+    </div>
+    <div class="hero__text container">
+      <h1>{site.name}</h1>
+      <p class="hero__sub">{site.title}</p>
+    </div>
+  </section>
+
+  <section class="section container about-blurb">
+    <div class="about-blurb__grid">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>Designing calm, human spaces.</h2>
+      </div>
+      <div class="about-blurb__body">
+        {site.homeAbout.map((para) => <p>{para}</p>)}
+        <a class="btn btn--accent" href="/about">More about me</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight container">
+    <div class="section-head">
+      <p class="eyebrow">Selected work</p>
+      <h2>Featured Projects</h2>
+    </div>
+    <div class="grid">
+      {
+        featured.map((p) => {
+          const cover = projectCover(p.id);
+          return (
+            cover && (
+              <ProjectCard
+                src={cover.src}
+                alt={cover.alt}
+                title={p.data.title}
+                href={`/portfolio/${p.id}`}
+              />
+            )
+          );
+        })
+      }
+    </div>
+    <p class="center" style="margin-top:2.5rem">
+      <a class="btn" href="/portfolio">View all projects</a>
+    </p>
+  </section>
+
+  <section class="section contact">
+    <div class="container contact__inner">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's work together.</h2>
+      <p class="lead">
+        Interested in collaborating or want to see more? Reach out any time.
+      </p>
+      <div class="contact__links">
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+        <a href={`tel:${site.phone.replace(/[^0-9]/g, "")}`}>Tel {site.phone}</a>
+        <a href={site.instagram} target="_blank" rel="noopener">Instagram</a>
+        <a href={site.linkedin} target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: min(82vh, 760px);
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+  }
+  .hero__media,
+  .hero__media :global(img) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero__scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(20, 16, 12, 0.6),
+      rgba(20, 16, 12, 0.05) 55%,
+      rgba(20, 16, 12, 0.15)
+    );
+  }
+  .hero__text {
+    position: relative;
+    padding-bottom: clamp(2.5rem, 7vw, 5rem);
+  }
+  .hero__text h1 {
+    color: #fff;
+    margin: 0;
+  }
+  .hero__sub {
+    font-size: 0.85rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0.6rem 0 0;
+  }
+
+  .about-blurb__grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: clamp(1.5rem, 5vw, 4rem);
+  }
+  @media (max-width: 800px) {
+    .about-blurb__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .about-blurb__body .btn {
+    margin-top: 0.6rem;
+  }
+
+  .section-head {
+    margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: clamp(1.2rem, 3vw, 2.2rem);
+  }
+
+  .contact {
+    background: var(--bg-alt);
+    border-top: 1px solid var(--line);
+  }
+  .contact__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem 2.4rem;
+    margin-top: 1.6rem;
+    font-size: 1.05rem;
+  }
+</style>

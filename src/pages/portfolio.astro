@@ -1,0 +1,85 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { projectCover } from "../lib/images.ts";
+
+const projects = await getCollection("projects");
+const byCategory = (cat: string) =>
+  projects
+    .filter((p) => p.data.category === cat)
+    .sort((a, b) => a.data.order - b.data.order);
+
+const sections = [
+  { key: "featured", label: "Featured Projects" },
+  { key: "other", label: "Other Projects" },
+  { key: "internship", label: "Internship Work" },
+].map((s) => ({ ...s, items: byCategory(s.key) }));
+---
+
+<BaseLayout title="Portfolio">
+  <section class="section--tight container page-head">
+    <p class="eyebrow">Work</p>
+    <h1>Portfolio</h1>
+    <p class="lead">
+      Interior architecture, renderings, and lighting design — from academic
+      studios to internship work.
+    </p>
+  </section>
+
+  {
+    sections.map(
+      (section) =>
+        section.items.length > 0 && (
+          <section class="section--tight container">
+            <div class="cat-head">
+              <h2>{section.label}</h2>
+              <span class="cat-count">{section.items.length}</span>
+            </div>
+            <div class="grid">
+              {section.items.map((p) => {
+                const cover = projectCover(p.id);
+                return (
+                  cover && (
+                    <ProjectCard
+                      src={cover.src}
+                      alt={cover.alt}
+                      title={p.data.title}
+                      href={`/portfolio/${p.id}`}
+                    />
+                  )
+                );
+              })}
+            </div>
+          </section>
+        ),
+    )
+  }
+</BaseLayout>
+
+<style>
+  .page-head {
+    padding-bottom: 0;
+  }
+  .cat-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.8rem;
+    margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+  }
+  .cat-head h2 {
+    margin: 0;
+  }
+  .cat-count {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--accent-deep);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: clamp(1.2rem, 3vw, 2.2rem);
+  }
+</style>

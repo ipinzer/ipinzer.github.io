@@ -1,0 +1,74 @@
+---
+import site from "../data/site.json";
+---
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <p class="footer__name">{site.fullName}</p>
+      <p class="muted footer__tag">{site.title}</p>
+    </div>
+
+    <div class="footer__col">
+      <p class="footer__label">Contact</p>
+      <p><a href={`tel:${site.phone.replace(/[^0-9]/g, "")}`}>Tel {site.phone}</a></p>
+      <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+      <p class="muted">{site.location}</p>
+    </div>
+
+    <div class="footer__col">
+      <p class="footer__label">Elsewhere</p>
+      <p><a href={site.instagram} target="_blank" rel="noopener">Instagram — {site.instagramHandle}</a></p>
+      <p><a href={site.linkedin} target="_blank" rel="noopener">LinkedIn — {site.linkedinName}</a></p>
+    </div>
+  </div>
+  <div class="container">
+    <hr />
+    <p class="footer__copy muted">{site.copyright}</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--bg-alt);
+    border-top: 1px solid var(--line);
+    padding-block: clamp(2.5rem, 6vw, 4rem) 1.5rem;
+    margin-top: 2rem;
+  }
+  .footer__inner {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: var(--gap);
+  }
+  @media (max-width: 720px) {
+    .footer__inner {
+      grid-template-columns: 1fr;
+      gap: 1.8rem;
+    }
+  }
+  .footer__name {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    color: var(--ink);
+    margin-bottom: 0.15rem;
+  }
+  .footer__tag {
+    margin: 0;
+  }
+  .footer p {
+    margin: 0 0 0.4rem;
+    font-size: 0.95rem;
+  }
+  .footer__label {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    margin-bottom: 0.8rem !important;
+  }
+  .footer__copy {
+    font-size: 0.82rem;
+    padding-top: 1.2rem;
+    margin: 0;
+  }
+</style>

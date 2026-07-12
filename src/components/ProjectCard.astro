@@ -1,0 +1,69 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  src: ImageMetadata;
+  alt: string;
+  title: string;
+  href: string;
+  category?: string;
+}
+const { src, alt, title, href, category } = Astro.props;
+---
+
+<a class="card" href={href}>
+  <div class="card__media">
+    <Image
+      src={src}
+      alt={alt}
+      widths={[400, 700, 1000]}
+      sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 33vw"
+      quality={80}
+    />
+  </div>
+  <div class="card__body">
+    {category && <span class="card__cat">{category}</span>}
+    <h3 class="card__title">{title}</h3>
+  </div>
+</a>
+
+<style>
+  .card {
+    display: block;
+    color: inherit;
+  }
+  .card__media {
+    overflow: hidden;
+    background: var(--bg-alt);
+    aspect-ratio: 4 / 3;
+  }
+  .card__media :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .card:hover .card__media :global(img) {
+    transform: scale(1.045);
+  }
+  .card__body {
+    padding-top: 0.9rem;
+  }
+  .card__cat {
+    display: block;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    margin-bottom: 0.35rem;
+  }
+  .card__title {
+    font-size: 1.25rem;
+    margin: 0;
+    transition: color 0.2s ease;
+  }
+  .card:hover .card__title {
+    color: var(--accent-deep);
+  }
+</style>

@@ -1,0 +1,162 @@
+@import "@fontsource-variable/fraunces";
+@import "@fontsource-variable/inter";
+
+:root {
+  /* Scandinavian-minimal palette */
+  --bg: #faf8f5;
+  --bg-alt: #f1ece5;
+  --ink: #2b2b2b;
+  --ink-soft: #5c574f;
+  --line: #e2dcd2;
+  --accent: #a8836a; /* warm clay */
+  --accent-deep: #8a6a53;
+
+  --serif: "Fraunces Variable", Georgia, serif;
+  --sans: "Inter Variable", system-ui, -apple-system, sans-serif;
+
+  --maxw: 1200px;
+  --gap: clamp(1rem, 3vw, 2.5rem);
+  --pad: clamp(1.25rem, 5vw, 4rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 350;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  font-weight: 420;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 0.5em;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+}
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+
+p {
+  margin: 0 0 1.1em;
+  color: var(--ink-soft);
+}
+
+a {
+  color: var(--accent-deep);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--ink);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--pad);
+}
+
+.section {
+  padding-block: clamp(3.5rem, 9vw, 7rem);
+}
+.section--tight {
+  padding-block: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+/* Small caps eyebrow / labels */
+.eyebrow {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  margin: 0 0 1rem;
+}
+
+.lead {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: var(--ink-soft);
+  max-width: 60ch;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.9rem;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  background: transparent;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+.btn:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+.btn--accent {
+  border-color: var(--accent-deep);
+  color: var(--accent-deep);
+}
+.btn--accent:hover {
+  background: var(--accent-deep);
+  color: var(--bg);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 0;
+}
+
+/* Utility */
+.center {
+  text-align: center;
+}
+.muted {
+  color: var(--ink-soft);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: 3px;
+}

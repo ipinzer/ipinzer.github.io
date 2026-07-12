@@ -1,0 +1,75 @@
+{
+  "name": "Isadora Pinzer",
+  "title": "Interior Architecture Student",
+  "summary": "Seeking employment at a progressive Interior Design or Architectural Firm, focusing on 3D Rendering. I am passionate about digital rendering software, the schematic design process, and Scandinavian design. Looking to combine Interior Architecture, Psychology, and Sustainability in my career.",
+  "education": [
+    {
+      "school": "ENDICOTT COLLEGE",
+      "when": "Graduated May of 2024",
+      "detail": "BFA in Interior Architecture. Relevant courses: Studios (Residential, Hospitality, Office, Healthcare), Building Codes, Rendering, and Lighting."
+    },
+    {
+      "school": "DIS COPENHAGEN",
+      "when": "Fall Semester 2021",
+      "detail": "Danish Institute for Study Abroad. Exhibition/Cultural Studio, Detailing and Sustainability, History of Danish Architecture, Danish Language and Culture."
+    },
+    {
+      "school": "NORTH ANDOVER HIGH SCHOOL",
+      "when": "Graduated 2019",
+      "detail": "Participated in Concert Choir, audition-only Treble Choir, and Drama Guild."
+    }
+  ],
+  "experience": [
+    {
+      "role": "Interior Design Intern",
+      "when": "July 2022 - April 2023",
+      "place": "LaGrasse Yanowitz & Feyl, Andover, MA",
+      "points": [
+        "Worked on various projects such as multi-family high rise new construction, corporate, restaurants, residential, and more.",
+        "Main responsibilities included minor redlines, space planning, construction documents, problem solving, and site visits to gather existing conditions.",
+        "Utilized Revit, AutoCAD and Bluebeam to prepare documents.",
+        "Created realistic renderings using Revit and Enscape.",
+        "Assisted with architectural work such as site plans, window placement, exterior paint, stairs, ramps, mailbox kiosks, and more."
+      ]
+    },
+    {
+      "role": "Intern",
+      "when": "June - August 2021",
+      "place": "A. Lee Interior Design, Derry, NH",
+      "points": [
+        "Met with potential clients throughout New England to determine their preferred design style, discuss challenges with the functionality of their current space, and gather measurements.",
+        "Projects included residential kitchen and bathroom remodels, new construction, and small commercial property.",
+        "Learned and utilized Chief Architect to prepare CAD drawings.",
+        "Prepared detailed presentations in Photoshop.",
+        "Communicated with vendors and local contractors.",
+        "Ordered, organized and maintained material library.",
+        "Posted project updates to client portal and social media."
+      ]
+    }
+  ],
+  "skills": [
+    "Sketchup",
+    "AutoCAD",
+    "Revit",
+    "Chief Architect",
+    "Enscape Rendering",
+    "Lumion Rendering",
+    "Architectural Drafting and Drawing",
+    "Construction Documents",
+    "InDesign",
+    "Photoshop",
+    "Illustrator",
+    "BlueBeam",
+    "Microsoft Office Suite",
+    "Google Suite",
+    "Windows",
+    "Mac"
+  ],
+  "other": [
+    "Semi-Finalist in 2022 IES Fixture Design Competition",
+    "Rendering featured in Endicott College Spring 2021 Student Invitational",
+    "Dean's List Spring and Fall 2020",
+    "President of Endicott Percussion Ensemble, Fall 2023 - Present",
+    "V.P. of Endicott Percussion Ensemble, Fall 2020 - Spring 2023"
+  ]
+}

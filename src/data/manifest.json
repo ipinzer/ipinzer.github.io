@@ -1,0 +1,584 @@
+{
+ "projects": {
+  "office": [
+   {
+    "file": "00.jpg",
+    "alt": "reception view_edited.jpg"
+   },
+   {
+    "file": "01.jpg",
+    "alt": "STAIR VIEW_edited.jpg"
+   },
+   {
+    "file": "02.jpg",
+    "alt": "OUTSIDE VIEW_edited.jpg"
+   },
+   {
+    "file": "03.jpg",
+    "alt": "walkway_edited.jpg"
+   },
+   {
+    "file": "04.png",
+    "alt": "IA 202 - Office Design Final Presentation-1.png"
+   },
+   {
+    "file": "05.png",
+    "alt": "IA 202 - Office Design Final Presentation-2.png"
+   },
+   {
+    "file": "06.png",
+    "alt": "IA 202 - Office Design Final Presentation-3.png"
+   }
+  ],
+  "look-a-like": [
+   {
+    "file": "00.jpg",
+    "alt": "en 2 edited_edited.jpg"
+   },
+   {
+    "file": "01.jpg",
+    "alt": "en 1 edited_edited.jpg"
+   },
+   {
+    "file": "02.jpg",
+    "alt": "en 3_edited_edited.jpg"
+   },
+   {
+    "file": "03.jpg",
+    "alt": "elevation color.jpg"
+   },
+   {
+    "file": "04.jpg",
+    "alt": "Floorplan.jpg"
+   },
+   {
+    "file": "05.jpg",
+    "alt": "plan_edited.jpg"
+   },
+   {
+    "file": "06.jpg",
+    "alt": "bar section_edited.jpg"
+   },
+   {
+    "file": "07.jpg",
+    "alt": "view 4.jpg"
+   },
+   {
+    "file": "08.jpg",
+    "alt": "en 2 edited_edited.jpg"
+   },
+   {
+    "file": "09.jpg",
+    "alt": "lips.jpg"
+   },
+   {
+    "file": "10.jpg",
+    "alt": "Z-BuonaBocca-Ramoprimo-0010.jpg"
+   }
+  ],
+  "furniture-exhibition": [
+   {
+    "file": "00.png",
+    "alt": "entry.png"
+   },
+   {
+    "file": "01.png",
+    "alt": "kaare.png"
+   },
+   {
+    "file": "02.png",
+    "alt": "accent.png"
+   },
+   {
+    "file": "03.png",
+    "alt": "borge.png"
+   },
+   {
+    "file": "04.png",
+    "alt": "micado.png"
+   },
+   {
+    "file": "05.png",
+    "alt": "Furniture Exhibition Boards 1&2-1.png"
+   },
+   {
+    "file": "06.png",
+    "alt": "Furniture Exhibition Boards 1&2-2.png"
+   },
+   {
+    "file": "07.png",
+    "alt": "Furniture Exhibition Boards-3.png"
+   },
+   {
+    "file": "08.png",
+    "alt": "Furniture Exhibition Boards-6.png"
+   },
+   {
+    "file": "09.png",
+    "alt": "Furniture Exhibition Boards-4.png"
+   },
+   {
+    "file": "10.png",
+    "alt": "Furniture Exhibition Boards-5.png"
+   },
+   {
+    "file": "11.png",
+    "alt": "Furniture Exhibition Boards-7.png"
+   }
+  ],
+  "snooze-community": [
+   {
+    "file": "00.png",
+    "alt": ""
+   },
+   {
+    "file": "01.png",
+    "alt": ""
+   },
+   {
+    "file": "02.png",
+    "alt": ""
+   },
+   {
+    "file": "03.png",
+    "alt": ""
+   },
+   {
+    "file": "04.png",
+    "alt": ""
+   },
+   {
+    "file": "05.png",
+    "alt": ""
+   },
+   {
+    "file": "06.png",
+    "alt": ""
+   },
+   {
+    "file": "07.png",
+    "alt": ""
+   },
+   {
+    "file": "08.png",
+    "alt": ""
+   },
+   {
+    "file": "09.png",
+    "alt": ""
+   },
+   {
+    "file": "10.png",
+    "alt": "Updated Final Boards_Page_1-min.png"
+   },
+   {
+    "file": "11.png",
+    "alt": "Updated Final Boards_Page_2.png"
+   },
+   {
+    "file": "12.png",
+    "alt": "Updated Final Boards_Page_3-min.png"
+   },
+   {
+    "file": "13.png",
+    "alt": "Updated Final Boards_Page_4-min.png"
+   }
+  ],
+  "eco-tourism-resort-restaurant": [
+   {
+    "file": "00.png",
+    "alt": "Pav_P2_60.png"
+   },
+   {
+    "file": "01.png",
+    "alt": "outdoor_FINAL_60.png"
+   },
+   {
+    "file": "02.png",
+    "alt": "Pav_P3_60.png"
+   },
+   {
+    "file": "03.png",
+    "alt": "bar_FINAL_60.png"
+   },
+   {
+    "file": "04.png",
+    "alt": "Pav AX edit.png"
+   },
+   {
+    "file": "05.png",
+    "alt": "Pod_Suite_P1_60.png"
+   },
+   {
+    "file": "06.png",
+    "alt": "Pod_Suite_P2_60.png"
+   },
+   {
+    "file": "07.png",
+    "alt": "Pod_Suite_AX_60.png"
+   },
+   {
+    "file": "08.png",
+    "alt": "Pod_P1_60.png"
+   },
+   {
+    "file": "09.png",
+    "alt": "Pod_P2_60.png"
+   },
+   {
+    "file": "10.png",
+    "alt": "Pod_AX_60.png"
+   },
+   {
+    "file": "11.png",
+    "alt": "IA 201 - Final Presentation Deck-01.png"
+   },
+   {
+    "file": "12.png",
+    "alt": "IA 201 - Final Presentation Deck-02.png"
+   }
+  ],
+  "ies-fixture": [
+   {
+    "file": "00.png",
+    "alt": "light 2.png"
+   },
+   {
+    "file": "01.png",
+    "alt": "light 3.png"
+   },
+   {
+    "file": "02.png",
+    "alt": "second light.png"
+   },
+   {
+    "file": "03.png",
+    "alt": "The Ripple - Print-1.png"
+   }
+  ],
+  "international-style-apartment": [
+   {
+    "file": "00.jpeg",
+    "alt": "2020-04-06 20-14.jpeg"
+   },
+   {
+    "file": "01.jpeg",
+    "alt": "2020-04-06 20-12.jpeg"
+   },
+   {
+    "file": "02.png",
+    "alt": "Project 1 Presentation-1.png"
+   },
+   {
+    "file": "03.png",
+    "alt": "Project 1 Presentation-2.png"
+   },
+   {
+    "file": "04.png",
+    "alt": "Project 1 Presentation-3.png"
+   }
+  ],
+  "cooking-school-culturehuset": [
+   {
+    "file": "00.png",
+    "alt": "KITCHENFINAL.png"
+   },
+   {
+    "file": "01.png",
+    "alt": "Tree2.png"
+   },
+   {
+    "file": "02.png",
+    "alt": "Greenhouse2.png"
+   },
+   {
+    "file": "03.png",
+    "alt": "Entry2.png"
+   },
+   {
+    "file": "04.png",
+    "alt": "Library2.png"
+   },
+   {
+    "file": "05.jpg",
+    "alt": ""
+   },
+   {
+    "file": "06.png",
+    "alt": "Isadora_Pinzer_ASN3.png"
+   }
+  ],
+  "vera-care": [
+   {
+    "file": "00.jpg",
+    "alt": "Main Entrance/Atrium"
+   },
+   {
+    "file": "01.jpg",
+    "alt": "Second Floor Atrium"
+   },
+   {
+    "file": "02.jpg",
+    "alt": "Patient Room"
+   },
+   {
+    "file": "03.jpg",
+    "alt": "Healing Garden"
+   },
+   {
+    "file": "04.jpg",
+    "alt": "Burn Rehabitation"
+   },
+   {
+    "file": "05.jpg",
+    "alt": "Acute Care"
+   },
+   {
+    "file": "06.jpg",
+    "alt": "Urgent Care"
+   },
+   {
+    "file": "07.jpg",
+    "alt": "Final VeraCare Boards_Page_1.jpg"
+   },
+   {
+    "file": "08.jpg",
+    "alt": ""
+   },
+   {
+    "file": "09.jpg",
+    "alt": "Final VeraCare Boards_Page_3.jpg"
+   }
+  ],
+  "studio-apartment": [
+   {
+    "file": "00.png",
+    "alt": "IA 101 - Driftwood Studio-1.png"
+   },
+   {
+    "file": "01.png",
+    "alt": "IA 101 - Driftwood Studio-2.png"
+   }
+  ],
+  "sustainable-tiny-house": [
+   {
+    "file": "00.jpg",
+    "alt": "kichen 2.jpg"
+   },
+   {
+    "file": "01.jpg",
+    "alt": "livingroom 2.jpg"
+   },
+   {
+    "file": "02.png",
+    "alt": "floorplan.png"
+   },
+   {
+    "file": "03.png",
+    "alt": "sketch - bathroom.png"
+   },
+   {
+    "file": "04.png",
+    "alt": "sketch - porch.png"
+   },
+   {
+    "file": "05.png",
+    "alt": "IA 102 - Project 2 Presentation-1.png"
+   },
+   {
+    "file": "06.png",
+    "alt": "IA 102 - Project 2 Presentation-2.png"
+   },
+   {
+    "file": "07.png",
+    "alt": "IA 102 - Project 2 Presentation-3.png"
+   }
+  ],
+  "kitchen-dining-lighting": [
+   {
+    "file": "00.jpg",
+    "alt": "real estate_overall.jpg"
+   },
+   {
+    "file": "01.jpg",
+    "alt": "holiday buffett_dining.jpg"
+   },
+   {
+    "file": "02.jpg",
+    "alt": "dinner_dining.jpg"
+   },
+   {
+    "file": "03.jpg",
+    "alt": "FP AND HW.jpg"
+   },
+   {
+    "file": "04.png",
+    "alt": "kitchen board final-1.png"
+   }
+  ],
+  "custom-luminaire": [
+   {
+    "file": "00.png",
+    "alt": "drum render 2.png"
+   },
+   {
+    "file": "01.jpg",
+    "alt": "drum render_1 - Photo (2).jpg"
+   },
+   {
+    "file": "02.png",
+    "alt": "Custom Luminaire - Djembe-1.png"
+   }
+  ],
+  "internship-work": [
+   {
+    "file": "00.png",
+    "alt": ""
+   },
+   {
+    "file": "01.png",
+    "alt": ""
+   },
+   {
+    "file": "02.png",
+    "alt": ""
+   },
+   {
+    "file": "03.png",
+    "alt": ""
+   },
+   {
+    "file": "04.png",
+    "alt": ""
+   },
+   {
+    "file": "05.png",
+    "alt": ""
+   },
+   {
+    "file": "06.png",
+    "alt": ""
+   },
+   {
+    "file": "07.png",
+    "alt": ""
+   },
+   {
+    "file": "08.png",
+    "alt": ""
+   },
+   {
+    "file": "09.png",
+    "alt": ""
+   },
+   {
+    "file": "10.png",
+    "alt": ""
+   },
+   {
+    "file": "11.png",
+    "alt": ""
+   },
+   {
+    "file": "12.png",
+    "alt": ""
+   },
+   {
+    "file": "13.jpg",
+    "alt": ""
+   },
+   {
+    "file": "14.jpg",
+    "alt": ""
+   },
+   {
+    "file": "15.jpg",
+    "alt": ""
+   },
+   {
+    "file": "16.jpg",
+    "alt": ""
+   },
+   {
+    "file": "17.jpg",
+    "alt": ""
+   },
+   {
+    "file": "18.jpg",
+    "alt": ""
+   },
+   {
+    "file": "19.png",
+    "alt": ""
+   },
+   {
+    "file": "20.png",
+    "alt": ""
+   },
+   {
+    "file": "21.png",
+    "alt": ""
+   },
+   {
+    "file": "22.png",
+    "alt": ""
+   },
+   {
+    "file": "23.png",
+    "alt": ""
+   },
+   {
+    "file": "24.png",
+    "alt": ""
+   },
+   {
+    "file": "25.png",
+    "alt": ""
+   },
+   {
+    "file": "26.png",
+    "alt": ""
+   },
+   {
+    "file": "27.png",
+    "alt": ""
+   },
+   {
+    "file": "28.png",
+    "alt": ""
+   },
+   {
+    "file": "29.png",
+    "alt": ""
+   }
+  ]
+ },
+ "about": [
+  {
+   "file": "00.jpeg",
+   "alt": "opera.heic"
+  },
+  {
+   "file": "01.jpg",
+   "alt": "aros.JPG"
+  },
+  {
+   "file": "02.jpg",
+   "alt": "temple.JPG"
+  },
+  {
+   "file": "03.jpg",
+   "alt": ""
+  },
+  {
+   "file": "04.jpg",
+   "alt": "avi.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "alt": "bean.jpg"
+  }
+ ],
+ "hero": "hero.png",
+ "hero_alt": "Atrium NE - photoshopped.png"
+}
