@@ -15,8 +15,7 @@ const { images } = Astro.props;
         <Image
           src={img.src}
           alt={img.alt}
-          widths={[600, 1000, 1600]}
-          sizes="(max-width: 800px) 100vw, 800px"
+          width={1200}
           quality={82}
           loading={i < 2 ? "eager" : "lazy"}
         />

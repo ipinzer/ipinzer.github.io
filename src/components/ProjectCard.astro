@@ -17,8 +17,7 @@ const { src, alt, title, href, category } = Astro.props;
     <Image
       src={src}
       alt={alt}
-      widths={[400, 700, 1000]}
-      sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 33vw"
+      width={700}
       quality={80}
     />
   </div>
