@@ -7,11 +7,11 @@
    },
    {
     "file": "01.jpg",
-    "alt": "STAIR VIEW_edited.jpg"
+    "alt": "OUTSIDE VIEW_edited.jpg"
    },
    {
     "file": "02.jpg",
-    "alt": "OUTSIDE VIEW_edited.jpg"
+    "alt": "STAIR VIEW_edited.jpg"
    },
    {
     "file": "03.jpg",
@@ -33,27 +33,27 @@
   "look-a-like": [
    {
     "file": "00.jpg",
-    "alt": "en 2 edited_edited.jpg"
-   },
-   {
-    "file": "01.jpg",
     "alt": "en 1 edited_edited.jpg"
    },
    {
+    "file": "01.jpg",
+    "alt": "5.jpg"
+   },
+   {
     "file": "02.jpg",
-    "alt": "en 3_edited_edited.jpg"
+    "alt": "en 2 edited_edited.jpg"
    },
    {
     "file": "03.jpg",
-    "alt": "elevation color.jpg"
+    "alt": "en 3_edited_edited.jpg"
    },
    {
     "file": "04.jpg",
-    "alt": "Floorplan.jpg"
+    "alt": "lips.jpg"
    },
    {
     "file": "05.jpg",
-    "alt": "plan_edited.jpg"
+    "alt": "view 4.jpg"
    },
    {
     "file": "06.jpg",
@@ -61,15 +61,15 @@
    },
    {
     "file": "07.jpg",
-    "alt": "view 4.jpg"
+    "alt": "elevation color.jpg"
    },
    {
     "file": "08.jpg",
-    "alt": "en 2 edited_edited.jpg"
+    "alt": "Floorplan.jpg"
    },
    {
     "file": "09.jpg",
-    "alt": "lips.jpg"
+    "alt": "plan_edited.jpg"
    },
    {
     "file": "10.jpg",
@@ -83,15 +83,15 @@
    },
    {
     "file": "01.png",
-    "alt": "kaare.png"
-   },
-   {
-    "file": "02.png",
     "alt": "accent.png"
    },
    {
-    "file": "03.png",
+    "file": "02.png",
     "alt": "borge.png"
+   },
+   {
+    "file": "03.png",
+    "alt": "kaare.png"
    },
    {
     "file": "04.png",
@@ -99,143 +99,203 @@
    },
    {
     "file": "05.png",
-    "alt": "Furniture Exhibition Boards 1&2-1.png"
+    "alt": "right section.png"
    },
    {
     "file": "06.png",
-    "alt": "Furniture Exhibition Boards 1&2-2.png"
+    "alt": "Furniture Exhibition Boards 1&2-1.png"
    },
    {
     "file": "07.png",
-    "alt": "Furniture Exhibition Boards-3.png"
+    "alt": "Furniture Exhibition Boards 1&2-2.png"
    },
    {
     "file": "08.png",
-    "alt": "Furniture Exhibition Boards-6.png"
+    "alt": "Furniture Exhibition Boards-1.png"
    },
    {
     "file": "09.png",
-    "alt": "Furniture Exhibition Boards-4.png"
+    "alt": "Furniture Exhibition Boards-2.png"
    },
    {
     "file": "10.png",
-    "alt": "Furniture Exhibition Boards-5.png"
+    "alt": "Furniture Exhibition Boards-3.png"
    },
    {
     "file": "11.png",
+    "alt": "Furniture Exhibition Boards-4.png"
+   },
+   {
+    "file": "12.png",
+    "alt": "Furniture Exhibition Boards-5.png"
+   },
+   {
+    "file": "13.png",
+    "alt": "Furniture Exhibition Boards-6.png"
+   },
+   {
+    "file": "14.png",
     "alt": "Furniture Exhibition Boards-7.png"
    }
   ],
   "snooze-community": [
    {
     "file": "00.png",
-    "alt": ""
+    "alt": "Entry - photoshopped.png"
    },
    {
     "file": "01.png",
-    "alt": ""
+    "alt": "Advocate Axon - photoshopped.png"
    },
    {
     "file": "02.png",
-    "alt": ""
+    "alt": "Atrium  - photoshopped.png"
    },
    {
     "file": "03.png",
-    "alt": ""
+    "alt": "Atrium NE - photoshopped.png"
    },
    {
     "file": "04.png",
-    "alt": ""
+    "alt": "Atrium Top - photoshopped.png"
    },
    {
     "file": "05.png",
-    "alt": ""
+    "alt": "Cafe - photoshopped.png"
    },
    {
     "file": "06.png",
-    "alt": ""
+    "alt": "Fitness Room - photoshopped.png"
    },
    {
     "file": "07.png",
-    "alt": ""
+    "alt": "Garden East - photoshopped.png"
    },
    {
     "file": "08.png",
-    "alt": ""
+    "alt": "Garden West - photoshopped.png"
    },
    {
     "file": "09.png",
-    "alt": ""
+    "alt": "Multipurpose (lvl 2) - photoshopped.png"
    },
    {
     "file": "10.png",
-    "alt": "Updated Final Boards_Page_1-min.png"
-   },
-   {
-    "file": "11.png",
-    "alt": "Updated Final Boards_Page_2.png"
-   },
-   {
-    "file": "12.png",
-    "alt": "Updated Final Boards_Page_3-min.png"
-   },
-   {
-    "file": "13.png",
-    "alt": "Updated Final Boards_Page_4-min.png"
+    "alt": "Sleep Lab - photoshopped.png"
    }
   ],
   "eco-tourism-resort-restaurant": [
    {
     "file": "00.png",
-    "alt": "Pav_P2_60.png"
-   },
-   {
-    "file": "01.png",
     "alt": "outdoor_FINAL_60.png"
    },
    {
-    "file": "02.png",
-    "alt": "Pav_P3_60.png"
-   },
-   {
-    "file": "03.png",
+    "file": "01.png",
     "alt": "bar_FINAL_60.png"
    },
    {
-    "file": "04.png",
+    "file": "02.png",
     "alt": "Pav AX edit.png"
    },
    {
+    "file": "03.png",
+    "alt": "Pav_P1_60.png"
+   },
+   {
+    "file": "04.png",
+    "alt": "Pav_P2_60.png"
+   },
+   {
     "file": "05.png",
-    "alt": "Pod_Suite_P1_60.png"
+    "alt": "Pav_P3_60.png"
    },
    {
     "file": "06.png",
-    "alt": "Pod_Suite_P2_60.png"
-   },
-   {
-    "file": "07.png",
-    "alt": "Pod_Suite_AX_60.png"
-   },
-   {
-    "file": "08.png",
-    "alt": "Pod_P1_60.png"
-   },
-   {
-    "file": "09.png",
-    "alt": "Pod_P2_60.png"
-   },
-   {
-    "file": "10.png",
     "alt": "Pod_AX_60.png"
    },
    {
+    "file": "07.png",
+    "alt": "Pod_P1_60.png"
+   },
+   {
+    "file": "08.png",
+    "alt": "Pod_P2_60.png"
+   },
+   {
+    "file": "09.png",
+    "alt": "Pod_Suite_AX_60.png"
+   },
+   {
+    "file": "10.png",
+    "alt": "Pod_Suite_P1_60.png"
+   },
+   {
     "file": "11.png",
-    "alt": "IA 201 - Final Presentation Deck-01.png"
+    "alt": "Pod_Suite_P2_60.png"
    },
    {
     "file": "12.png",
+    "alt": "IA 201 - Final Presentation Deck-01.png"
+   },
+   {
+    "file": "13.png",
     "alt": "IA 201 - Final Presentation Deck-02.png"
+   },
+   {
+    "file": "14.png",
+    "alt": "IA 201 - Final Presentation Deck-03.png"
+   },
+   {
+    "file": "15.png",
+    "alt": "IA 201 - Final Presentation Deck-04.png"
+   },
+   {
+    "file": "16.png",
+    "alt": "IA 201 - Final Presentation Deck-05.png"
+   },
+   {
+    "file": "17.png",
+    "alt": "IA 201 - Final Presentation Deck-06.png"
+   },
+   {
+    "file": "18.png",
+    "alt": "IA 201 - Final Presentation Deck-07.png"
+   },
+   {
+    "file": "19.png",
+    "alt": "IA 201 - Final Presentation Deck-08.png"
+   },
+   {
+    "file": "20.png",
+    "alt": "IA 201 - Final Presentation Deck-09.png"
+   },
+   {
+    "file": "21.png",
+    "alt": "IA 201 - Final Presentation Deck-10.png"
+   },
+   {
+    "file": "22.png",
+    "alt": "IA 201 - Final Presentation Deck-11.png"
+   },
+   {
+    "file": "23.png",
+    "alt": "IA 201 - Final Presentation Deck-12.png"
+   },
+   {
+    "file": "24.png",
+    "alt": "IA 201 - Final Presentation Deck-13.png"
+   },
+   {
+    "file": "25.png",
+    "alt": "IA 201 - Final Presentation Deck-14.png"
+   },
+   {
+    "file": "26.png",
+    "alt": "IA 201 - Final Presentation Deck-15.png"
+   },
+   {
+    "file": "27.png",
+    "alt": "IA 201 - Final Presentation Deck-16.png"
    }
   ],
   "ies-fixture": [
@@ -258,12 +318,12 @@
   ],
   "international-style-apartment": [
    {
-    "file": "00.jpeg",
-    "alt": "2020-04-06 20-14.jpeg"
+    "file": "00.jpg",
+    "alt": "2020-04-06 20-12.jpeg"
    },
    {
-    "file": "01.jpeg",
-    "alt": "2020-04-06 20-12.jpeg"
+    "file": "01.jpg",
+    "alt": "2020-04-06 20-14.jpeg"
    },
    {
     "file": "02.png",
@@ -285,68 +345,80 @@
    },
    {
     "file": "01.png",
-    "alt": "Tree2.png"
+    "alt": "Entry2.png"
    },
    {
     "file": "02.png",
-    "alt": "Greenhouse2.png"
+    "alt": "FACADE.png"
    },
    {
     "file": "03.png",
-    "alt": "Entry2.png"
+    "alt": "Greenhouse2.png"
    },
    {
     "file": "04.png",
     "alt": "Library2.png"
    },
    {
-    "file": "05.jpg",
-    "alt": ""
+    "file": "05.png",
+    "alt": "Tree2.png"
    },
    {
     "file": "06.png",
     "alt": "Isadora_Pinzer_ASN3.png"
+   },
+   {
+    "file": "07.png",
+    "alt": "Presentation-1.png"
+   },
+   {
+    "file": "08.jpg",
+    "alt": "Presentation.jpg"
    }
   ],
   "vera-care": [
    {
     "file": "00.jpg",
-    "alt": "Main Entrance/Atrium"
+    "alt": "Main Entrance_Atrium.jpg"
    },
    {
     "file": "01.jpg",
-    "alt": "Second Floor Atrium"
+    "alt": "Acute Care.jpg"
    },
    {
     "file": "02.jpg",
-    "alt": "Patient Room"
+    "alt": "Burn Rehabitation.jpg"
    },
    {
     "file": "03.jpg",
-    "alt": "Healing Garden"
+    "alt": "Healing Garden.jpg"
    },
    {
     "file": "04.jpg",
-    "alt": "Burn Rehabitation"
+    "alt": "Patient Room.jpg"
    },
    {
     "file": "05.jpg",
-    "alt": "Acute Care"
+    "alt": "renders_1 - Photo (7)_edited_edited.jpg"
    },
    {
     "file": "06.jpg",
-    "alt": "Urgent Care"
+    "alt": "Second Floor Atrium.jpg"
    },
    {
     "file": "07.jpg",
-    "alt": "Final VeraCare Boards_Page_1.jpg"
+    "alt": "Urgent Care.jpg"
    },
    {
     "file": "08.jpg",
-    "alt": ""
+    "alt": "Final VeraCare Boards_Page_1.jpg"
    },
    {
     "file": "09.jpg",
+    "alt": "Final VeraCare Boards_Page_2.jpg"
+   },
+   {
+    "file": "10.jpg",
     "alt": "Final VeraCare Boards_Page_3.jpg"
    }
   ],
@@ -358,16 +430,28 @@
    {
     "file": "01.png",
     "alt": "IA 101 - Driftwood Studio-2.png"
+   },
+   {
+    "file": "02.png",
+    "alt": "IA 101 - Driftwood Studio-3.png"
+   },
+   {
+    "file": "03.png",
+    "alt": "IA 101 - Driftwood Studio-4.png"
+   },
+   {
+    "file": "04.png",
+    "alt": "IA 101 - Driftwood Studio-5.png"
    }
   ],
   "sustainable-tiny-house": [
    {
     "file": "00.jpg",
-    "alt": "kichen 2.jpg"
+    "alt": "livingroom 2.jpg"
    },
    {
     "file": "01.jpg",
-    "alt": "livingroom 2.jpg"
+    "alt": "kichen 2.jpg"
    },
    {
     "file": "02.png",
@@ -375,29 +459,29 @@
    },
    {
     "file": "03.png",
-    "alt": "sketch - bathroom.png"
-   },
-   {
-    "file": "04.png",
-    "alt": "sketch - porch.png"
-   },
-   {
-    "file": "05.png",
     "alt": "IA 102 - Project 2 Presentation-1.png"
    },
    {
-    "file": "06.png",
+    "file": "04.png",
     "alt": "IA 102 - Project 2 Presentation-2.png"
    },
    {
-    "file": "07.png",
+    "file": "05.png",
     "alt": "IA 102 - Project 2 Presentation-3.png"
+   },
+   {
+    "file": "06.png",
+    "alt": "sketch - bathroom.png"
+   },
+   {
+    "file": "07.png",
+    "alt": "sketch - porch.png"
    }
   ],
   "kitchen-dining-lighting": [
    {
     "file": "00.jpg",
-    "alt": "real estate_overall.jpg"
+    "alt": "dinner_dining.jpg"
    },
    {
     "file": "01.jpg",
@@ -405,178 +489,230 @@
    },
    {
     "file": "02.jpg",
-    "alt": "dinner_dining.jpg"
-   },
-   {
-    "file": "03.jpg",
     "alt": "FP AND HW.jpg"
    },
    {
-    "file": "04.png",
+    "file": "03.png",
     "alt": "kitchen board final-1.png"
+   },
+   {
+    "file": "04.png",
+    "alt": "kitchen board-1.png"
+   },
+   {
+    "file": "05.jpg",
+    "alt": "real estate_overall.jpg"
    }
   ],
   "custom-luminaire": [
    {
     "file": "00.png",
+    "alt": "drum render 1.png"
+   },
+   {
+    "file": "01.png",
     "alt": "drum render 2.png"
    },
    {
-    "file": "01.jpg",
+    "file": "02.jpg",
     "alt": "drum render_1 - Photo (2).jpg"
    },
    {
-    "file": "02.png",
+    "file": "03.png",
     "alt": "Custom Luminaire - Djembe-1.png"
    }
   ],
   "internship-work": [
    {
     "file": "00.png",
-    "alt": ""
+    "alt": "Melrose Apartment Render.png"
    },
    {
     "file": "01.png",
-    "alt": ""
+    "alt": "Development 1.png"
    },
    {
     "file": "02.png",
-    "alt": ""
+    "alt": "Development 2.png"
    },
    {
     "file": "03.png",
-    "alt": ""
+    "alt": "Development 3.png"
    },
    {
     "file": "04.png",
-    "alt": ""
+    "alt": "Development 4.png"
    },
    {
     "file": "05.png",
-    "alt": ""
+    "alt": "Development 5.png"
    },
    {
     "file": "06.png",
-    "alt": ""
+    "alt": "Melrose Apartment Renderings.png"
    },
    {
     "file": "07.png",
-    "alt": ""
+    "alt": "School 1.png"
    },
    {
     "file": "08.png",
-    "alt": ""
+    "alt": "School 2.png"
    },
    {
     "file": "09.png",
-    "alt": ""
+    "alt": "School 3.png"
    },
    {
     "file": "10.png",
-    "alt": ""
+    "alt": "Worcester 1.png"
    },
    {
     "file": "11.png",
-    "alt": ""
+    "alt": "Worcester 2.png"
    },
    {
-    "file": "12.png",
-    "alt": ""
+    "file": "12.jpg",
+    "alt": "Development Pic 1.jpg"
    },
    {
     "file": "13.jpg",
-    "alt": ""
+    "alt": "Development Pic 2.jpg"
    },
    {
     "file": "14.jpg",
-    "alt": ""
+    "alt": "Development Pic 3.jpg"
    },
    {
     "file": "15.jpg",
-    "alt": ""
+    "alt": "Development Pic 4.jpg"
    },
    {
     "file": "16.jpg",
-    "alt": ""
+    "alt": "Development Pic 5.jpg"
    },
    {
     "file": "17.jpg",
-    "alt": ""
+    "alt": "Development Pic 6.jpg"
    },
    {
     "file": "18.jpg",
-    "alt": ""
+    "alt": "Development Pic 7.jpg"
    },
    {
-    "file": "19.png",
-    "alt": ""
+    "file": "19.jpg",
+    "alt": "Development Pic 8.jpg"
    },
    {
     "file": "20.png",
-    "alt": ""
+    "alt": "IMG_6691.PNG"
    },
    {
     "file": "21.png",
-    "alt": ""
+    "alt": "IMG_6692.PNG"
    },
    {
     "file": "22.png",
-    "alt": ""
+    "alt": "IMG_6710.PNG"
    },
    {
     "file": "23.png",
-    "alt": ""
+    "alt": "IMG_6711.PNG"
    },
    {
     "file": "24.png",
-    "alt": ""
+    "alt": "IMG_6712.PNG"
    },
    {
     "file": "25.png",
-    "alt": ""
+    "alt": "IMG_6713.PNG"
    },
    {
     "file": "26.png",
-    "alt": ""
+    "alt": "Lawrence Apartment Plans 1.png"
    },
    {
     "file": "27.png",
-    "alt": ""
+    "alt": "Lawrence Apartment Plans 2.png"
    },
    {
     "file": "28.png",
-    "alt": ""
+    "alt": "Lawrence Apartment Plans 3.png"
    },
    {
     "file": "29.png",
-    "alt": ""
+    "alt": "Lawrence Apartment Plans 4.png"
+   },
+   {
+    "file": "30.png",
+    "alt": "Lawrence Apartment Plans 5.png"
+   },
+   {
+    "file": "31.png",
+    "alt": "Melrose Apartment Plans 2.png"
+   },
+   {
+    "file": "32.png",
+    "alt": "Melrose Apartment Plans.png"
    }
   ]
  },
  "about": [
   {
-   "file": "00.jpeg",
-   "alt": "opera.heic"
+   "file": "00.jpg",
+   "alt": "opera.heic.jpeg"
   },
   {
    "file": "01.jpg",
-   "alt": "aros.JPG"
+   "alt": "nyhavn.JPG"
   },
   {
    "file": "02.jpg",
-   "alt": "temple.JPG"
+   "alt": "barcelona.JPG"
   },
   {
    "file": "03.jpg",
-   "alt": ""
+   "alt": "plaza.JPG"
   },
   {
    "file": "04.jpg",
-   "alt": "avi.jpg"
+   "alt": "temple.JPG"
   },
   {
    "file": "05.jpg",
+   "alt": "aros.JPG"
+  },
+  {
+   "file": "06.jpg",
+   "alt": "fair.JPG"
+  },
+  {
+   "file": "07.jpg",
+   "alt": "percussion.JPG"
+  },
+  {
+   "file": "08.jpg",
+   "alt": "drum.jpg"
+  },
+  {
+   "file": "09.jpg",
+   "alt": "opera group.JPG"
+  },
+  {
+   "file": "10.jpg",
    "alt": "bean.jpg"
+  },
+  {
+   "file": "11.jpg",
+   "alt": "avi.jpg"
+  },
+  {
+   "file": "12.png",
+   "alt": "night out.PNG"
+  },
+  {
+   "file": "13.jpg",
+   "alt": "st jude.JPG"
   }
  ],
  "hero": "hero.png",

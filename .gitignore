@@ -18,3 +18,6 @@ npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# raw source asset dump (curated copies live in src/assets and public/)
+FOR WEBSITE/
