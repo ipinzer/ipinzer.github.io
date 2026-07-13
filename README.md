@@ -76,6 +76,33 @@ Replace the file in `src/assets/home/` (keep a single image there).
 
 ## Deploying
 
+### Fastmail file hosting (custom domain)
+
+Fastmail serves a static site from a folder in your file storage. **Do not
+drag the whole `dist` folder into the Fastmail web UI** — browser folder-drag
+uploads silently drop files when there are many of them, so images end up
+404ing. Use WebDAV instead, via the included script:
+
+1. Create a Fastmail **app password** with *Files (WebDAV)* access
+   (Settings → Privacy & Security → App passwords).
+2. Build, then export your credentials and deploy:
+
+   ```bash
+   npm run build
+
+   export FM_USER="you@yourdomain"     # your full Fastmail login
+   export FM_PASS="the-app-password"
+
+   # Find the folder that serves your site:
+   ./scripts/deploy-fastmail.sh list
+
+   # Upload every file into that folder (with retries + verification):
+   FM_TARGET="/izzy.pinzer.family" ./scripts/deploy-fastmail.sh deploy
+   ```
+
+   The script uploads each file individually over WebDAV and then verifies a
+   sample of images are live. Re-run `deploy` to retry if anything failed.
+
 ### GitHub Pages (included workflow)
 
 1. Push this repo to GitHub.
