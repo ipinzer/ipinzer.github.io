@@ -76,47 +76,41 @@ Replace the file in `src/assets/home/` (keep a single image there).
 
 ## Deploying
 
-### Fastmail file hosting (custom domain)
+The site deploys to **GitHub Pages** at the custom domain **izzypinzer.com**
+via GitHub Actions. Every push to `main` triggers
+`.github/workflows/deploy.yml`, which builds the Astro site and publishes it.
 
-Fastmail serves a static site from a folder in your file storage. **Do not
-drag the whole `dist` folder into the Fastmail web UI** — browser folder-drag
-uploads silently drop files when there are many of them, so images end up
-404ing. Use WebDAV instead, via the included script:
+### One-time setup
 
-1. Create a Fastmail **app password** with *Files (WebDAV)* access
-   (Settings → Privacy & Security → App passwords).
-2. Build, then export your credentials and deploy:
+1. In the repo, go to **Settings → Pages** and set **Source** to
+   **GitHub Actions**.
+2. Under **Settings → Pages → Custom domain**, enter `izzypinzer.com`
+   (this matches `public/CNAME`, which is published to the site root).
+3. Point DNS for `izzypinzer.com` at GitHub Pages:
+   - Apex (`izzypinzer.com`) → four `A` records:
+     `185.199.108.153`, `185.199.109.153`, `185.199.110.153`,
+     `185.199.111.153` (and the matching `AAAA` records if you want IPv6).
+   - `www` → `CNAME` to `ipinzer.github.io`.
+4. Leave **Enforce HTTPS** checked once the certificate is issued.
 
-   ```bash
-   npm run build
+`site` is set to `https://izzypinzer.com` and `base` is unset in
+`astro.config.mjs`. To use the default project URL instead
+(`https://ipinzer.github.io/izzypinzer.com/`), set `base: "/izzypinzer.com"`,
+update `site`, and delete `public/CNAME`.
 
-   export FM_USER="you@yourdomain"     # your full Fastmail login
-   export FM_PASS="the-app-password"
+### Deploying changes
 
-   # Find the folder that serves your site:
-   ./scripts/deploy-fastmail.sh list
+```bash
+git add -A && git commit -m "Update content"
+git push            # Actions builds and deploys automatically
+```
 
-   # Upload every file into that folder (with retries + verification):
-   FM_TARGET="/izzy.pinzer.family" ./scripts/deploy-fastmail.sh deploy
-   ```
+### Other hosts
 
-   The script uploads each file individually over WebDAV and then verifies a
-   sample of images are live. Re-run `deploy` to retry if anything failed.
-
-### GitHub Pages (included workflow)
-
-1. Push this repo to GitHub.
-2. In **Settings -> Pages**, set **Source** to **GitHub Actions**.
-3. Every push to `main` builds and deploys via `.github/workflows/deploy.yml`.
-
-If you deploy to a **project** page (`https://<user>.github.io/<repo>`), set the
-matching `base` in `astro.config.mjs`, e.g. `base: "/izzy-portfolio"`. For a
-custom domain or `https://<user>.github.io` user page, leave `base` unset and
-update `site` to your domain.
-
-### Netlify / Cloudflare Pages
-
-Build command `npm run build`, publish directory `dist`. No other config needed.
+Any static host works: build with `npm run build` and serve the `dist/`
+folder (e.g. Netlify/Cloudflare Pages — build command `npm run build`,
+publish directory `dist`). A `scripts/deploy-fastmail.sh` helper for
+Fastmail WebDAV hosting is also included.
 
 ## Notes
 
