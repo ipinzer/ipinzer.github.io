@@ -1,8 +1,6 @@
 # Izzy Pinzer — Interior Architecture Portfolio
 
-A fast, self-hosted portfolio for **Isadora (Izzy) Pinzer**, built with [Astro](https://astro.build).
-It replaces the paid Wix site and deploys as static files to any free host
-(GitHub Pages, Netlify, Cloudflare Pages).
+A portfolio website for **Isadora (Izzy) Pinzer**, built with [Astro](https://astro.build).
 
 - Zero client-side JavaScript, optimized/responsive images (WebP/AVIF)
 - Content lives in easy-to-edit Markdown + JSON — no CMS, no database
@@ -73,44 +71,6 @@ Edit the JSON files in `src/data/`. To replace the resume PDF, overwrite
 ### Change the home hero
 
 Replace the file in `src/assets/home/` (keep a single image there).
-
-## Deploying
-
-The site deploys to **GitHub Pages** at the custom domain **izzypinzer.com**
-via GitHub Actions. Every push to `main` triggers
-`.github/workflows/deploy.yml`, which builds the Astro site and publishes it.
-
-### One-time setup
-
-1. In the repo, go to **Settings → Pages** and set **Source** to
-   **GitHub Actions**.
-2. Under **Settings → Pages → Custom domain**, enter `izzypinzer.com`
-   (this matches `public/CNAME`, which is published to the site root).
-3. Point DNS for `izzypinzer.com` at GitHub Pages:
-   - Apex (`izzypinzer.com`) → four `A` records:
-     `185.199.108.153`, `185.199.109.153`, `185.199.110.153`,
-     `185.199.111.153` (and the matching `AAAA` records if you want IPv6).
-   - `www` → `CNAME` to `ipinzer.github.io`.
-4. Leave **Enforce HTTPS** checked once the certificate is issued.
-
-`site` is set to `https://izzypinzer.com` and `base` is unset in
-`astro.config.mjs`. To use the default project URL instead
-(`https://ipinzer.github.io/izzypinzer.com/`), set `base: "/izzypinzer.com"`,
-update `site`, and delete `public/CNAME`.
-
-### Deploying changes
-
-```bash
-git add -A && git commit -m "Update content"
-git push            # Actions builds and deploys automatically
-```
-
-### Other hosts
-
-Any static host works: build with `npm run build` and serve the `dist/`
-folder (e.g. Netlify/Cloudflare Pages — build command `npm run build`,
-publish directory `dist`). A `scripts/deploy-fastmail.sh` helper for
-Fastmail WebDAV hosting is also included.
 
 ## Notes
 
