@@ -1,5 +1,5 @@
-@import "@fontsource-variable/bodoni-moda/standard.css";
-@import "@fontsource-variable/bodoni-moda/standard-italic.css";
+@import "@fontsource-variable/bodoni-moda/opsz.css";
+@import "@fontsource-variable/bodoni-moda/opsz-italic.css";
 @import "@fontsource-variable/league-spartan";
 
 :root {
@@ -47,8 +47,9 @@ h1,
 h2,
 h3 {
   font-family: var(--serif);
-  font-weight: 500;
+  font-weight: 600;
   font-style: italic;
+  font-variation-settings: "opsz" 9;
   text-transform: uppercase;
   line-height: 1.12;
   letter-spacing: -0.01em;
