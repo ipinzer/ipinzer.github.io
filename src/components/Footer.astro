@@ -11,7 +11,7 @@ import site from "../data/site.json";
 
     <div class="footer__col">
       <p class="footer__label">Contact</p>
-      <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+      <p><a href={`mailto:${site.email.toLowerCase()}`}>{site.email}</a></p>
       <p class="muted">{site.location}</p>
     </div>
 
