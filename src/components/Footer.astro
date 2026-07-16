@@ -17,7 +17,6 @@ import site from "../data/site.json";
 
     <div class="footer__col">
       <p class="footer__label">Elsewhere</p>
-      <p><a href={site.instagram} target="_blank" rel="noopener">Instagram — {site.instagramHandle}</a></p>
       <p><a href={site.linkedin} target="_blank" rel="noopener">LinkedIn — {site.linkedinName}</a></p>
     </div>
   </div>
@@ -30,9 +29,17 @@ import site from "../data/site.json";
 <style>
   .footer {
     background: var(--bg-alt);
+    color: var(--ink-on-alt);
     border-top: 1px solid var(--line);
     padding-block: clamp(2.5rem, 6vw, 4rem) 1.5rem;
     margin-top: 2rem;
+  }
+  .footer :global(p),
+  .footer :global(a) {
+    color: var(--ink-on-alt);
+  }
+  .footer :global(.muted) {
+    color: var(--ink-on-alt-soft);
   }
   .footer__inner {
     display: grid;
@@ -52,7 +59,7 @@ import site from "../data/site.json";
     font-style: italic;
     font-variation-settings: "opsz" 9;
     text-transform: uppercase;
-    color: var(--ink);
+    color: var(--ink-on-alt);
     margin-bottom: 0.15rem;
   }
   .footer__tag {
@@ -66,7 +73,7 @@ import site from "../data/site.json";
     font-size: 0.72rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--accent-deep);
+    color: var(--ink-on-alt-soft);
     margin-bottom: 0.8rem !important;
   }
   .footer__copy {

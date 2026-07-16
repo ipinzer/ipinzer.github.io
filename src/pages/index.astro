@@ -47,13 +47,12 @@ const hero = homeHero();
 
   <section class="section--tight container">
     <div class="section-head">
-      <p class="eyebrow">Selected work</p>
       <h2>Featured Projects</h2>
     </div>
     <div class="grid">
       {
         featured.map((p) => {
-          const cover = projectCover(p.id);
+          const cover = projectCover(p.id, p.data.cover);
           return (
             cover && (
               <ProjectCard
@@ -74,14 +73,12 @@ const hero = homeHero();
 
   <section class="section contact">
     <div class="container contact__inner">
-      <p class="eyebrow">Contact</p>
       <h2>Let's work together.</h2>
       <p class="lead">
         Interested in collaborating or want to see more? Reach out any time.
       </p>
       <div class="contact__links">
         <a href={`mailto:${site.email}`}>{site.email}</a>
-        <a href={site.instagram} target="_blank" rel="noopener">Instagram</a>
         <a href={site.linkedin} target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
@@ -154,10 +151,6 @@ const hero = homeHero();
     gap: clamp(1.2rem, 3vw, 2.2rem);
   }
 
-  .contact {
-    background: var(--bg-alt);
-    border-top: 1px solid var(--line);
-  }
   .contact__links {
     display: flex;
     flex-wrap: wrap;

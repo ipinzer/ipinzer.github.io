@@ -5,21 +5,19 @@ import ProjectCard from "../components/ProjectCard.astro";
 import { projectCover } from "../lib/images.ts";
 
 const projects = await getCollection("projects");
-const byCategory = (cat: string) =>
+const byCategories = (cats: string[]) =>
   projects
-    .filter((p) => p.data.category === cat)
+    .filter((p) => cats.includes(p.data.category))
     .sort((a, b) => a.data.order - b.data.order);
 
 const sections = [
-  { key: "featured", label: "Featured Projects" },
-  { key: "other", label: "Other Projects" },
-  { key: "internship", label: "Internship Work" },
-].map((s) => ({ ...s, items: byCategory(s.key) }));
+  { keys: ["featured"], label: "Featured Projects" },
+  { keys: ["other", "internship"], label: "Other Projects" },
+].map((s) => ({ ...s, items: byCategories(s.keys) }));
 ---
 
 <BaseLayout title="Portfolio">
   <section class="section--tight container page-head">
-    <p class="eyebrow">Work</p>
     <h1>Portfolio</h1>
     <p class="lead">
       Interior architecture, renderings, and lighting design — from academic
@@ -34,11 +32,10 @@ const sections = [
           <section class="section--tight container">
             <div class="cat-head">
               <h2>{section.label}</h2>
-              <span class="cat-count">{section.items.length}</span>
             </div>
             <div class="grid">
               {section.items.map((p) => {
-                const cover = projectCover(p.id);
+                const cover = projectCover(p.id, p.data.cover);
                 return (
                   cover && (
                     <ProjectCard

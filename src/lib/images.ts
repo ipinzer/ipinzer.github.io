@@ -48,8 +48,12 @@ export function projectImages(slug: string): Img[] {
   });
 }
 
-export function projectCover(slug: string): Img | undefined {
-  return projectImages(slug)[0];
+export function projectCover(slug: string, preferredFile?: string): Img | undefined {
+  const imgs = projectImages(slug);
+  if (preferredFile) {
+    return imgs.find((img) => img.file === preferredFile) ?? imgs[0];
+  }
+  return imgs[0];
 }
 
 export function aboutImages(): Img[] {

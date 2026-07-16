@@ -7,6 +7,7 @@ const projects = defineCollection({
     title: z.string(),
     category: z.enum(["featured", "other", "internship"]),
     order: z.number().default(0),
+    cover: z.string().optional(),
     meta: z.record(z.string()).optional(),
   }),
 });

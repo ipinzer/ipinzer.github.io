@@ -1,0 +1,249 @@
+---
+import { getEntry, render } from "astro:content";
+import { Image } from "astro:assets";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { projectImages } from "../../lib/images.ts";
+import presentations from "../../data/presentations.json";
+
+const project = await getEntry("projects", "internship-work");
+
+if (!project) {
+    throw new Error("Internship work project entry not found.");
+}
+
+const { Content } = await render(project);
+const images = projectImages(project.id);
+const meta = project.data.meta ?? {};
+
+const internshipSections = [
+    {
+        id: "worcester-apartment-building",
+        title: "Worcester Apartment Building",
+        files: ["10.png", "11.png"],
+    },
+    {
+        id: "wells-housing-complex",
+        title: "Wells Housing Complex",
+        files: ["20.png", "21.png", "22.png", "23.png", "24.png", "25.png"],
+    },
+    {
+        id: "lawrence-academic-renovation",
+        title: "Lawrence Academic Renovation",
+        files: ["07.png", "08.png", "09.png"],
+    },
+    {
+        id: "lawrence-mixed-use-apartment-building",
+        title: "Lawrence Mixed-Use Apartment Building",
+        files: ["26.png", "27.png", "28.png", "29.png", "30.png"],
+    },
+    {
+        id: "melrose-mixed-use-apartment-building",
+        title: "Melrose Mixed-Use Apartment Building",
+        files: [
+            "00.png",
+            "01.png",
+            "02.png",
+            "03.png",
+            "04.png",
+            "05.png",
+            "06.png",
+            "12.jpg",
+            "13.jpg",
+            "14.jpg",
+            "15.jpg",
+            "16.jpg",
+            "17.jpg",
+            "18.jpg",
+            "19.jpg",
+            "31.png",
+            "32.png",
+        ],
+    },
+]
+    .map((section) => ({
+        ...section,
+        images: section.files
+            .map((file) => images.find((img) => img.file === file))
+            .filter((img): img is (typeof images)[number] => Boolean(img)),
+    }))
+    .filter((section) => section.images.length > 0);
+---
+
+<BaseLayout title={project.data.title}>
+    <article>
+        <header class="section--tight container proj-head">
+            <h1>{project.data.title}</h1>
+        </header>
+
+        <div class="section container proj-body">
+            <aside class="proj-meta">
+                <nav class="proj-toc" aria-label="Internship project sections">
+                    <p class="proj-toc__title">Internship Projects</p>
+                    <ul>
+                        {
+                            internshipSections.map((section) => (
+                                <li>
+                                    <a href={`#${section.id}`}>
+                                        {section.title}
+                                    </a>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </nav>
+                <dl>
+                    {Object.entries(meta).map(([k, v]) => (
+                        <div class="proj-meta__row">
+                            <dt>{k}</dt>
+                            <dd>{v}</dd>
+                        </div>
+                    ))}
+                </dl>
+            </aside>
+
+            <div class="proj-prose prose">
+                <Content />
+                <div class="internship-sections">
+                    {
+                        internshipSections.map((section) => (
+                            <section id={section.id} class="internship-section">
+                                <h2>{section.title}</h2>
+                                <div class="internship-grid">
+                                    {section.images.map((img) => (
+                                        <figure class="internship-grid__item">
+                                            <Image
+                                                src={img.src}
+                                                alt={img.alt}
+                                                width={1200}
+                                                quality={82}
+                                                loading="lazy"
+                                            />
+                                        </figure>
+                                    ))}
+                                </div>
+                            </section>
+                        ))
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="container proj-nav">
+            <a class="btn" href="/portfolio">← All projects</a>
+        </div>
+    </article>
+</BaseLayout>
+
+<style>
+    .proj-head {
+        padding-bottom: 1.5rem;
+    }
+    .proj-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+    .proj-meta {
+        position: static;
+        top: auto;
+    }
+    @media (min-width: 1080px) {
+        .proj-body {
+            grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
+            gap: clamp(2rem, 6vw, 5rem);
+        }
+        .proj-meta {
+            position: sticky;
+            top: 90px;
+        }
+    }
+    .proj-prose {
+        min-width: 0;
+    }
+    .proj-toc {
+        padding-bottom: 1.1rem;
+    }
+    .proj-toc__title {
+        margin: 0 0 0.65rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--accent-deep);
+    }
+    .proj-toc ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 0.45rem;
+    }
+    .proj-toc a {
+        text-decoration: none;
+        color: var(--ink);
+        font-size: 0.93rem;
+        line-height: 1.35;
+    }
+    .proj-toc a:hover {
+        color: var(--accent-deep);
+    }
+    .proj-meta__pdf {
+        margin-top: 1.25rem;
+        display: inline-block;
+    }
+    .proj-meta dl {
+        margin: 0;
+        border-top: 1px solid var(--line);
+    }
+    .proj-meta__row {
+        padding: 0.85rem 0;
+        border-bottom: 1px solid var(--line);
+    }
+    .proj-meta dt {
+        font-size: 0.68rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--accent-deep);
+        margin-bottom: 0.2rem;
+    }
+    .proj-meta dd {
+        margin: 0;
+        font-size: 0.98rem;
+        color: var(--ink);
+    }
+    .prose :global(p) {
+        font-size: 1.05rem;
+    }
+    .internship-sections {
+        margin-top: 2rem;
+        display: grid;
+        gap: clamp(2rem, 5vw, 3.2rem);
+    }
+    .internship-section {
+        scroll-margin-top: 88px;
+    }
+    .internship-section h2 {
+        margin-bottom: 1rem;
+    }
+    .internship-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 0.9rem;
+    }
+    @media (max-width: 680px) {
+        .internship-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    .internship-grid__item {
+        margin: 0;
+    }
+    .internship-grid__item :global(img) {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .proj-nav {
+        padding-block: 2rem 1rem;
+    }
+</style>

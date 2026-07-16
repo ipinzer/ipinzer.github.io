@@ -8,7 +8,9 @@ import presentations from "../../data/presentations.json";
 
 export async function getStaticPaths() {
   const projects = await getCollection("projects");
-  return projects.map((p) => ({ params: { slug: p.id }, props: { project: p } }));
+  return projects
+    .filter((p) => p.id !== "internship-work")
+    .map((p) => ({ params: { slug: p.id }, props: { project: p } }));
 }
 
 const { project } = Astro.props;
@@ -21,7 +23,7 @@ const pdf = (presentations as Record<string, string>)[project.id];
 const catLabel: Record<string, string> = {
   featured: "Featured Project",
   other: "Project",
-  internship: "Internship Work",
+  internship: "Project",
 };
 ---
 

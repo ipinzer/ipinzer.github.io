@@ -2,8 +2,10 @@
 title: "Internship Work"
 category: internship
 order: 13
+cover: "22.png"
 meta:
   Programs: "Revit and Enscape"
+  Firm: "LYF Architects"
+  Role: "Interior Design Intern"
 ---
 
-WORCESTER APARTMENT BUILDING WELLS HOUSING COMPLEX LAWRENCE ACADEMIC RENOVATION LAWRENCE MIXED-USE APARTMENT BUILDING MELROSE MIXED-USE APARTMENT BUILDING
