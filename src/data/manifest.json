@@ -522,140 +522,136 @@
     "alt": "Custom Luminaire - Djembe-1.png"
    }
   ],
-  "internship-work": [
-   {
-    "file": "00.png",
-    "alt": "Melrose Apartment Render.png"
-   },
-   {
-    "file": "01.png",
-    "alt": "Development 1.png"
-   },
-   {
-    "file": "02.png",
-    "alt": "Development 2.png"
-   },
-   {
-    "file": "03.png",
-    "alt": "Development 3.png"
-   },
-   {
-    "file": "04.png",
-    "alt": "Development 4.png"
-   },
-   {
-    "file": "05.png",
-    "alt": "Development 5.png"
-   },
-   {
-    "file": "06.png",
-    "alt": "Melrose Apartment Renderings.png"
-   },
-   {
-    "file": "07.png",
-    "alt": "School 1.png"
-   },
-   {
-    "file": "08.png",
-    "alt": "School 2.png"
-   },
-   {
-    "file": "09.png",
-    "alt": "School 3.png"
-   },
-   {
-    "file": "10.png",
-    "alt": "Worcester 1.png"
-   },
-   {
-    "file": "11.png",
-    "alt": "Worcester 2.png"
-   },
-   {
-    "file": "12.jpg",
-    "alt": "Development Pic 1.jpg"
-   },
-   {
-    "file": "13.jpg",
-    "alt": "Development Pic 2.jpg"
-   },
-   {
-    "file": "14.jpg",
-    "alt": "Development Pic 3.jpg"
-   },
-   {
-    "file": "15.jpg",
-    "alt": "Development Pic 4.jpg"
-   },
-   {
-    "file": "16.jpg",
-    "alt": "Development Pic 5.jpg"
-   },
-   {
-    "file": "17.jpg",
-    "alt": "Development Pic 6.jpg"
-   },
-   {
-    "file": "18.jpg",
-    "alt": "Development Pic 7.jpg"
-   },
-   {
-    "file": "19.jpg",
-    "alt": "Development Pic 8.jpg"
-   },
-   {
-    "file": "20.png",
-    "alt": "IMG_6691.PNG"
-   },
-   {
-    "file": "21.png",
-    "alt": "IMG_6692.PNG"
-   },
-   {
-    "file": "22.png",
-    "alt": "IMG_6710.PNG"
-   },
-   {
-    "file": "23.png",
-    "alt": "IMG_6711.PNG"
-   },
-   {
-    "file": "24.png",
-    "alt": "IMG_6712.PNG"
-   },
-   {
-    "file": "25.png",
-    "alt": "IMG_6713.PNG"
-   },
-   {
-    "file": "26.png",
-    "alt": "Lawrence Apartment Plans 1.png"
-   },
-   {
-    "file": "27.png",
-    "alt": "Lawrence Apartment Plans 2.png"
-   },
-   {
-    "file": "28.png",
-    "alt": "Lawrence Apartment Plans 3.png"
-   },
-   {
-    "file": "29.png",
-    "alt": "Lawrence Apartment Plans 4.png"
-   },
-   {
-    "file": "30.png",
-    "alt": "Lawrence Apartment Plans 5.png"
-   },
-   {
-    "file": "31.png",
-    "alt": "Melrose Apartment Plans 2.png"
-   },
-   {
-    "file": "32.png",
-    "alt": "Melrose Apartment Plans.png"
-   }
-  ]
+    "internship-work": [
+     {
+        "file": "LawrenceAcademicRenovation1.png",
+        "alt": "LawrenceAcademicRenovation1.png"
+     },
+     {
+        "file": "LawrenceAcademicRenovation2.png",
+        "alt": "LawrenceAcademicRenovation2.png"
+     },
+     {
+        "file": "LawrenceAcademicRenovation3.png",
+        "alt": "LawrenceAcademicRenovation3.png"
+     },
+     {
+        "file": "LawrenceMixedUseApartmentBuilding1.png",
+        "alt": "LawrenceMixedUseApartmentBuilding1.png"
+     },
+     {
+        "file": "LawrenceMixedUseApartmentBuilding2.png",
+        "alt": "LawrenceMixedUseApartmentBuilding2.png"
+     },
+     {
+        "file": "LawrenceMixedUseApartmentBuilding3.png",
+        "alt": "LawrenceMixedUseApartmentBuilding3.png"
+     },
+     {
+        "file": "LawrenceMixedUseApartmentBuilding4.png",
+        "alt": "LawrenceMixedUseApartmentBuilding4.png"
+     },
+     {
+        "file": "LawrenceMixedUseApartmentBuilding5.png",
+        "alt": "LawrenceMixedUseApartmentBuilding5.png"
+     },
+     {
+        "file": "Melrose1.png",
+        "alt": "Melrose1.png"
+     },
+     {
+        "file": "Melrose2.png",
+        "alt": "Melrose2.png"
+     },
+     {
+        "file": "Melrose3.png",
+        "alt": "Melrose3.png"
+     },
+     {
+        "file": "Melrose_DWG1.png",
+        "alt": "Melrose_DWG1.png"
+     },
+     {
+        "file": "Melrose_DWG2.png",
+        "alt": "Melrose_DWG2.png"
+     },
+     {
+        "file": "Wells1.png",
+        "alt": "Wells1.png"
+     },
+     {
+        "file": "Wells2.png",
+        "alt": "Wells2.png"
+     },
+     {
+        "file": "Wells3.png",
+        "alt": "Wells3.png"
+     },
+     {
+        "file": "Wells4.png",
+        "alt": "Wells4.png"
+     },
+     {
+        "file": "Wells5.png",
+        "alt": "Wells5.png"
+     },
+     {
+        "file": "Wells6.jpg",
+        "alt": "Wells6.jpg"
+     },
+     {
+        "file": "Wells7.jpg",
+        "alt": "Wells7.jpg"
+     },
+     {
+        "file": "Wells8.jpg",
+        "alt": "Wells8.jpg"
+     },
+     {
+        "file": "Wells9.jpg",
+        "alt": "Wells9.jpg"
+     },
+     {
+        "file": "Wells10.jpg",
+        "alt": "Wells10.jpg"
+     },
+     {
+        "file": "Wells11.jpg",
+        "alt": "Wells11.jpg"
+     },
+     {
+        "file": "Wells12.jpg",
+        "alt": "Wells12.jpg"
+     },
+     {
+        "file": "Wells13.jpg",
+        "alt": "Wells13.jpg"
+     },
+     {
+        "file": "Worcester1.png",
+        "alt": "Worcester1.png"
+     },
+     {
+        "file": "Worcester2.png",
+        "alt": "Worcester2.png"
+     },
+     {
+        "file": "Worcester3.png",
+        "alt": "Worcester3.png"
+     },
+     {
+        "file": "Worcester4.png",
+        "alt": "Worcester4.png"
+     },
+     {
+        "file": "Worcester5.png",
+        "alt": "Worcester5.png"
+     },
+     {
+        "file": "Worcester6.png",
+        "alt": "Worcester6.png"
+     }
+    ]
  },
  "about": [
   {
