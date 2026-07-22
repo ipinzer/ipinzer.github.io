@@ -2,7 +2,7 @@
 title: "Internship Work"
 category: internship
 order: 13
-cover: "22.png"
+cover: "Worcester1.png"
 meta:
   Programs: "Revit and Enscape"
   Firm: "LYF Architects"
